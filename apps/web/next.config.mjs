@@ -1,5 +1,9 @@
+import "./env.mjs";
+
 /** @type {import('next').NextConfig} */
-module.exports = {
+const config = {
   transpilePackages: ["@repo/ui"],
   reactStrictMode: true,
 };
+
+export default config;
