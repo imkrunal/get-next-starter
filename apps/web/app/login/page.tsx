@@ -1,9 +1,9 @@
 "use client";
 
-import { Button } from "@repo/ui/button";
+import { Button } from "@repo/ui";
 import { signIn } from "next-auth/react";
 
-const Home = () => {
+const Login = () => {
   const handleGithubLogin = async () => await signIn("github");
 
   return (
@@ -13,4 +13,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Login;
